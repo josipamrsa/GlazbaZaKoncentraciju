@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Pocetna</title>
+   
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+        
+        <!--link na js-->
+        <script type="text/javascript" src="js/welcome.js"> </script>
+
+
+        <!--link na css stylesheet-->
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+    </head>
+    
+
+    <body class="welcome-theme">
+    <script type="text/javascript" src="cordova.js"></script>
+
+        <div id="app">
+            
+            <div id="welcomeScreenTitle">Dobrodošli nazad</div>
+        
+            <button class="welcomeScreenOptions">Izaberi opciju</button>
+                <ul id="izbor">
+                    <button data-inline="true" id="nova">Kreiraj novu playlistu</button>
+                    <button data-inline="true" id="pokreni">Slusaj glazbu</button> 
+                    <button data-inline="true" id="brisi">Briši postojeće playliste</button>
+                </ul>
+
+        </div>
+
+    </body>
+
+</html>

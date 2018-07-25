@@ -1,0 +1,70 @@
+/* JQUERY ELEMENTI */
+
+
+/* Mijenjanje boje body elemenata vrsi se s ovim klasama */
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper { 
+    background: transparent; /* Micemo boju pozadine dobivenu putem JQuery datoteka */
+    border-color: 0px;
+    color: inherit; /* Dodjeljujemo boju iz tema */
+}
+
+
+.ui-btn-corner-all, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-flipswitch.ui-corner-all, .ui-li-count {
+    background: transparent;
+    opacity: 0.9;
+    color: white;
+}
+
+
+button.ui-btn {
+    width: 50%px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 0%;     
+}
+
+
+.ui-btn, label.ui-btn {  
+    font-weight: 700;
+    border-width: 0px;
+    border-style: solid;
+}
+
+
+/* SADRZAJ */
+
+
+#izbor {
+    text-align: center;
+}
+
+
+#app {
+    max-width: 100%;  
+    font-size: 15px; 
+    position: relative;
+}
+
+
+.welcome-theme {
+    background-image: url("bg/7.jpg");
+    background-size: cover;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+#welcomeScreenTitle {
+    text-align: center;
+    margin-top: 50%;
+    font-family: Calibri;
+    font-size: 30px;
+}
+
+
+.welcomeScreenOptions {
+    text-align: center;
+}
+
+
+

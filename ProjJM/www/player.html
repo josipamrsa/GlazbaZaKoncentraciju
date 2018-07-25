@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Player</title>
+        
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!--link na css stylesheet-->
+        <link href="css/player.css" type="text/css" rel="stylesheet"/>
+        
+        <!--link na js-->
+        <script type="text/javascript" src="js/playerJS.js"> </script>
+
+    </head>
+    
+    
+
+    <body class="player-theme">
+       
+         <script type="text/javascript" src="cordova.js"></script>
+
+        <div id="aplikacija">
+            
+            <video autoplay muted loop id="myVideo">
+                <source src="video/3.mp4" type="video/mp4">
+            </video>
+            
+            <div class="content">
+            
+                <select id="vizualizacija" data-mini="true">
+                    <option value="video/1.mp4">Jarko crveni zalazak</option>
+                    <option value="video/2.mp4">Pogled preko planina</option>
+                    <option value="video/3.mp4">Prelazak zalaska u sumrak</option>
+                </select>
+                
+                <audio id="player">
+                    <p>I'm sorry but your browser doesn't support the <code>audio</code> element, so you can't run the demo.</p>
+                </audio>
+          
+                <div id="kontrole"> 
+                    <button id="play" type="reset" data-inline="true"><img id="btn-img" src="img/ico/play-button.png" /></button> 
+                    <button id="pause" data-inline="true" onclick="document.getElementById('player').pause()"><img id="btn-img" src="img/ico/equal-1.png" /></button> 
+                    <button id="stop" data-inline="true" onclick="zaustavi()"><img id="btn-img" src="img/ico/stop.png" /></button>    
+                    <button id="bk" data-inline="true"><img id="btn-img" src="img/ico/bkwd.png" /></button>
+                    <button id="fd" data-inline="true"><img id="btn-img" src="img/ico/fast-forward.png" /></button>
+                
+                    <select id="izbor-playlista">
+                        <option value="nema">Odaberi...</option> 
+                    </select>
+                </div>
+                
+                <button id="nazad" data-inline="true">&#8592;</button>
+                
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>

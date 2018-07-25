@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Playlista</title>
+        
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!--link na css stylesheet-->
+        <link href="css/playlista.css" type="text/css" rel="stylesheet"/>
+         
+        <!--link na js-->
+        <script type="text/javascript" src="js/playlistaJS.js"> </script>   
+
+    </head>
+    
+    
+
+    <body class="playlista-theme">
+       
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <div id="aplikacija">  
+            
+            <button id="nazad" data-inline="true">&#8592;</button>
+            
+            <select id="playliste-unos">
+                    <option value="">Postojeće playliste...</option>
+            </select>
+            
+            <select id="playlista">
+                <option value="nema">Odaberite kategoriju...</option>
+                <option value="ucenje">Učenje</option>
+                <option value="opustanje">Opuštanje</option>
+                <option value="meditacija">Meditacija</option>
+                <option value="trening">Trening</option>
+            </select>
+            
+            <div id="hideme"> 
+                <input type="text" data-inline="true" id="nazivPlay" placeholder="Unesite naziv playliste..." />
+                <input type="search" data-inline="true" id="zanr" placeholder="Unesite zanr..." />
+                <button id="posalji">Pretraga</button>
+            </div>
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content" id="skladbe">
+                </div>
+                
+                <div class="listen">
+                    <audio id="embedPlayer" src="#">
+                    <p>I'm sorry but your browser doesn't support the <code>audio</code> element, so you can't run the demo.</p>
+                    </audio>
+                </div>
+
+            </div>
+            
+            <div id="sadrzaj-tablice">
+            </div>
+            
+            <div id="feed-container">              
+            </div>          
+           
+        </div>  
+
+    </body>
+
+</html>

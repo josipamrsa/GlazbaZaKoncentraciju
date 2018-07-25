@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Popis lista</title>
+        
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <!--link na css stylesheet-->
+        <link href="css/popis-lista.css" type="text/css" rel="stylesheet"/>
+        
+        <!--link na js-->
+        <script type="text/javascript" src="js/popisLista.js"> </script>
+        
+    </head>
+    
+
+    <body class="popis-theme">
+       
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <div id="aplikacija">  
+            <button id="nazad" data-inline="true">&#8592;</button>
+            
+            <select id="popis-playlista">
+                <option value="nema">Odaberi playlistu</option>
+            </select>
+            
+            <div id="info"><h1>Informacije o playlisti</h1></div>
+            <button id="brisi-playlistu">Brisi playlistu</button>
+            
+        </div>
+
+    </body>
+
+</html>
